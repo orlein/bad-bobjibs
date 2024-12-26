@@ -1,23 +1,19 @@
-import { Provider } from 'react-redux';
-import store from './app/store';
-import { Route, Routes } from 'react-router';
-// import Home from './pages/home';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import Login from './pages/login';
-import Page from './app/dashboard/page';
-
-const queryClient = new QueryClient();
+import { BrowserRouter as Router, Route, Routes } from 'react-router';
+import Home from './pages/home';
+import Map from './pages/Map';
+import Search from './pages/Search';
+import Profile from './pages/Profile';
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <Provider store={store}>
-        <Routes>
-          <Route index element={<Page />} />
-          <Route path="login" element={<Login />} />
-        </Routes>
-      </Provider>
-    </QueryClientProvider>
+    // <Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/map" element={<Map />} />
+      <Route path="/search" element={<Search />} />
+      <Route path="/profile" element={<Profile />} />
+    </Routes>
+    /* </Router> */
   );
 }
 
