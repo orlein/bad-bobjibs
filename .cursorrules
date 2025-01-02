@@ -1,0 +1,116 @@
+# Restaurant Violation Tracker - PRD
+
+## 1. Product Overview
+
+A web application that helps users track and report restaurants with health code violations or other infractions, featuring an interactive map, user reports, and violation categories.
+
+## 2. Feature Requirements
+
+### 2.1 Home Screen
+
+Violation Categories Bar
+
+- Horizontal scrollable categories at the top
+- Categories include:
+  - Critical Violations
+  - Non-Critical Violations
+  - Temporary Closures
+  - Warnings
+  - Fines
+- Visual indicators (colors/icons) for severity
+- Tap to filter restaurant list
+- Restaurant List
+  - Sorted by most recent violations
+  - Each restaurant card shows:
+    - Restaurant name and location
+    - Violation type and date
+    - Violation severity indicator
+    - Quick preview of latest violation
+  - Pull-to-refresh functionality
+  - Infinite scroll for pagination
+
+### 2.2 Search & Map Screen (Combined)
+
+- Search Interface
+  - Persistent search bar at top
+  - Filter options:
+    - Violation type
+    - Date range
+    - Rating
+    - Distance
+  - Auto-complete suggestions
+- Interactive Map
+  - Below search bar, taking majority of screen
+  - Clustered markers for dense areas
+  - Color-coded pins based on violation severity
+  - Restaurant info cards on pin tap
+  - Current location integration
+  - Map/List view toggle
+
+### 2.3 Report Screen
+
+- Report Creation
+  - Form fields:
+    - Restaurant name (with auto-complete)
+    - Location (map integration)
+    - Violation type (dropdown)
+    - Description
+    - Date of incident
+  - Photo upload capability
+    - Multiple photo support
+    - Camera integration
+    - Basic image editing
+  - Optional anonymous reporting
+  - Draft saving
+
+### 2.4 Profile Features
+
+- View submitted reports
+- Saved restaurants
+- Notification preferences
+- Account settings
+- Report history
+
+### 3. Technical Requirements
+
+#### 3.1 API Integration
+
+- Restaurant data API
+- Geolocation services
+- Image upload and storage
+- User authentication
+- Report submission endpoints
+
+#### 3.2 Performance
+
+- Initial load under 2 seconds
+- Smooth map interactions
+- Efficient image compression
+- Optimized list rendering
+
+#### 3.3 Data Storage
+
+- User preferences
+- Cached map data
+- Report drafts
+- Authentication tokens
+
+#### 4. Navigation Updates
+
+#### 5. Success Metrics
+
+- User engagement (DAU/MAU)
+- Number of reports submitted
+- Report quality (completeness)
+- User retention
+- Response time from authorities
+- App store ratings
+
+#### 6. Future Considerations
+
+- Authority dashboard
+- Restaurant owner responses
+- Social features (following, sharing)
+- Integration with health department APIs
+- Automated violation detection
+- Multi-language support

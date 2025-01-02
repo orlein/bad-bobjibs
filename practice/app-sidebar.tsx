@@ -16,7 +16,7 @@ import {
 
 import { NavMain } from '@/components/ui/nav-main';
 import { NavProjects } from '@/components/ui/nav-projects';
-import { NavUser } from '@/components/ui/nav-user';
+// import { NavUser } from '@/components/ui/nav-user';
 import { TeamSwitcher } from '@/components/ui/team-switcher';
 import {
   Sidebar,
@@ -26,7 +26,7 @@ import {
   SidebarRail,
 } from '@/components/ui/sidebar';
 import { Button } from './button';
-import { Link, useNavigate } from 'react-router';
+import { Link } from 'react-router';
 
 // This is sample data.
 const data = {
